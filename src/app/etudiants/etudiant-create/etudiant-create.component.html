@@ -1,0 +1,57 @@
+<div class="container col-md-12">
+  <simple-notifications></simple-notifications>
+
+  <div class="row targetDiv col-md-12" id="div1">
+    <mat-card class=" card col-md-8">
+      <div class="card-text" style="text-align: center">
+        <h3><b> Etudiant </b></h3>
+      </div>
+      <span>
+    <mat-form-field appearance="outline">
+      <mat-label>Nom d'étudiant</mat-label>
+      <label>
+        <input type="text" matInput placeholder="Placeholder" [(ngModel)]="etudiant.nom">
+      </label>
+    </mat-form-field>
+  </span>
+
+      <span>
+    <mat-form-field appearance="outline">
+      <mat-label>CIN</mat-label>
+      <input type="text" matInput placeholder="Placeholder" [(ngModel)]="etudiant.cin">
+      <mat-hint></mat-hint>
+    </mat-form-field>
+  </span>
+
+      <span>
+    <mat-form-field appearance="outline">
+      <mat-label>Ref</mat-label>
+      <input type="text" matInput placeholder="Placeholder" [(ngModel)]="etudiant.ref">
+      <mat-hint></mat-hint>
+    </mat-form-field>
+  </span>
+
+      <span>
+    <mat-form-field appearance="outline">
+      <mat-label>Date de naissance</mat-label>
+      <input type="date" matInput placeholder="Placeholder" [(ngModel)]="etudiant.datenaissance">
+      <mat-hint></mat-hint>
+    </mat-form-field>
+  </span>
+
+      <span>
+    <mat-form-field appearance="outline">
+      <mat-label>Filière</mat-label>
+      <input type="text" matInput placeholder="Placeholder" [(ngModel)]="etudiant.filiere">
+      <mat-hint></mat-hint>
+    </mat-form-field>
+  </span>
+    </mat-card>
+  </div>
+  <div>
+    <button class="btn btn-block btn-primary" (click)="save()">Save</button>
+  </div>
+</div>
+
+
+

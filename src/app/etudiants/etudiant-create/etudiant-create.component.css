@@ -1,0 +1,31 @@
+span{
+  margin-right: 50px;
+  margin-bottom: 70px;color: #305F72;
+}
+
+mat-label {
+
+  font-size: 15px;
+}
+
+button {
+  height: 50px;
+  width: 200px;
+  color: black;
+  float: left;
+  margin-top: 5px;
+}
+
+.container {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 800px;
+  margin-left: -100px;
+  margin-top: 20px;
+
+}
+
+
+
