@@ -1,0 +1,26 @@
+<div class="youssef">
+  <div class="card header"></div>
+  <div class="card body">
+    <table class="table table-bordered table-responsive">
+      <thead>
+      <th>Nom</th>
+      <th>CIN</th>
+      <th>Ref</th>
+      <th>Date de naissance</th>
+      <th>Filière</th>
+      <th>Action</th>
+      </thead>
+      <tbody>
+      <tr *ngFor="let c of etudiants; index as i">
+        <td>{{c.nom}}</td>
+        <td>{{c.cin}}</td>
+        <td>{{c.ref}}</td>
+        <td>{{c.datenaissance}}</td>
+        <td>{{c.filiere}}</td>
+        <td><span (click)="delete(i)"><button class="fa fa-trash btn btn-danger"></button></span>
+        <span (click)="update(i,c)"><button class="fa fa-edit btn btn-warning"></button></span></td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
