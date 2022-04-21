@@ -13,6 +13,10 @@ import { EtudiantListComponent } from './etudiants/etudiant-list/etudiant-list.c
 import {RouterModule} from "@angular/router";
 import {HttpClientModule} from "@angular/common/http";
 import {SimpleNotificationsModule} from "angular2-notifications";
+import { MenuComponent } from './menu/menu.component';
+import { AppRoutingModule } from './app-routing.module';
+import {NgbModule} from "@ng-bootstrap/ng-bootstrap";
+
 
 
 @NgModule({
@@ -20,7 +24,8 @@ import {SimpleNotificationsModule} from "angular2-notifications";
     AppComponent,
     EtudiantComponent,
     EtudiantCreateComponent,
-    EtudiantListComponent
+    EtudiantListComponent,
+    MenuComponent
   ],
   imports: [
     BrowserModule,
@@ -31,7 +36,10 @@ import {SimpleNotificationsModule} from "angular2-notifications";
     BrowserAnimationsModule,
     RouterModule,
     HttpClientModule,
-    SimpleNotificationsModule.forRoot()
+    SimpleNotificationsModule.forRoot(),
+    AppRoutingModule,
+    NgbModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]

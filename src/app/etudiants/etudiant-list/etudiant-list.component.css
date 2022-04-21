@@ -1,8 +1,19 @@
+
+.youssef{
+  margin-top: 10px;
+}
+
 thead{
   background-color: #8fbcc0;
 }
 
-.youssef{
-  margin-left: -200px;
-  margin-top: 10px;
+strong {
+  color: #FFFFFF;
+  margin-right: 10px;
 }
+
+.monTable {
+  background-color: #1090bc;
+}
+
+

@@ -1,17 +1,19 @@
 <div class="youssef">
   <div class="card header"></div>
   <div class="card body">
-    <table class="table table-bordered table-responsive">
-      <thead>
+    <table class="table table-bordered col-md-11 shadow p-3 mb-5 bg-body rounded">
+      <thead class="table-borderless monTable">
+      <tr class="text-center">
       <th>Nom</th>
       <th>CIN</th>
       <th>Ref</th>
       <th>Date de naissance</th>
       <th>Filière</th>
       <th>Action</th>
+      </tr>
       </thead>
-      <tbody>
-      <tr *ngFor="let c of etudiants; index as i">
+      <tbody *ngFor="let c of etudiants; index as i">
+      <tr class="text-center">
         <td>{{c.nom}}</td>
         <td>{{c.cin}}</td>
         <td>{{c.ref}}</td>
